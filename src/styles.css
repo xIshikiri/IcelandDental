@@ -1,11 +1,10 @@
 * {
     box-sizing: border-box;
-    background-color: rgb(56, 141, 141);
     margin: 0;
     padding: 0;
 }
 
-li, a {
+li, a, button {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -15,9 +14,52 @@ li, a {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
+    padding: 30px 2%;
+    background-color: rgb(56, 141, 141);
 }
 
-/* background-color: rgb(56, 141, 141); */
+.navLogo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.navLogo picture img{
+    width: 100%;
+    min-width: 120px;
+    height: 120px
+}
+
+.navbar{
+    list-style: none;
+    min-inline-size: 32em;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navbar li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navbar li a:hover {
+    color: rgb(41, 100, 100);
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(59, 170, 170);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+    margin-left: 20px;
+}
+
+button:hover {
+    background-color: rgb(59, 170, 170, 0.8);
+}

@@ -7,25 +7,26 @@
 </head>
 <body>
     <header>
-        <img class="navLogo" src="images/logo_small_transparent_white.png" alt="Logo firmy">
-        <nav>
-            <ul class="navbar">
-                <li>Strona główna</li>
-                <li>Aktualności</li>
-                <li>Oferta</li>
-                <li>Kontakt</li>
-            </ul>
-        </nav>
-        <ul class="accountTab">Konto
-            <li>Konto
+        <div class="navLogo">
+            <picture>
+                <source media="(min-width: 1090px)" srcset="images/logo_small_transparent_white.png">
+                <source media="(min-width: 736px)" srcset="images/logo_square_120px.png">
+                <img src="images/logo_square_64px.png">
+            </picture>
+        </div>
+        <div class="navbar">
+            <nav>
                 <ul>
-                    <li>Moje konto</li>
-                    <li>Kalendarz Zabiegów</li>
-                    <li>Historia pacjenta</li>
-                    <li>Ustawienia</li>
+                    <li><a href="#">Strona główna</a></li>
+                    <li><a href="#">Aktualności</a></li>
+                    <li><a href="#">Oferta</a></li>
+                    <li><a href="#">Kontakt</a></li>
                 </ul>
-            </li>
-        </ul>
+            </nav>
+        </div>
+        <div class="accountButton">
+            <a href="#"><button>Zaloguj</button></a>
+        </div>
     </header>
 </body>
 </html>
