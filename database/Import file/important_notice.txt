@@ -1,0 +1,31 @@
+Żeby użyć pliku do importu bazy danych na lokalny serwer sql:
+
+1.  Uruchom program XAMPP
+2.  Włącz kolejno Apache i MySQL (zwróć uwagę na porty na których działają!)
+3.  Wejdź w przeglądarce na localhost/phpmyadmin
+4.  Nie wybierając żadnej bazy danych, wejdź w zakładkę Import
+5.  Wybierz plik DatabaseStructure.sql z tego folderu
+6.  Wciśnij Wykonaj
+7.  Odśwież stronę i sprawdź w hierarchii czy powstała nowa baza danych razem z zawartością
+
+
+Żeby podłączyć VS Code do bazy danych i operować na niej z edytora tekstu:
+
+1.  Wejdź w poniższe linki i zainstaluj rozszerzenia które się w nich znajdują:
+    https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools
+    https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-mysql
+2.  Po lewej stronie VS Code powinna pojawić się zakładka z ikoną walca. Wejdź w nią
+3.  Wciśnij niebieski przycisk Create Connection
+4.  Wybierz z listy MySQL
+5.  Wpisz dane do połączenia z lokalnym serwerem MySQL (domyślnie: host 'localhost', port taki jak w XAMPP, baza danych 'icelanddental' , uzytkownik 'root', puste haslo '')
+6.  Wciśnij Test Connection, jeżeli wyskoczy komunikat na zielonym tle podane dane są prawidłowe i można wcisnąć Create
+7.  VS Code jest teraz podpięty do bazy danych aplikacji na serwerze.
+    Po stworzeniu lokalnie pliku z rozszerzeniem SQL możesz uruchomić skrypt bezpośrednio z edytora, a w zakładce SQLTools masz podgląd struktury bazy danych i przyciski do szybkich kwerend
+
+W folderze "Test Querries" umieszczaj testowe pliki kwerend, dla szybszego użytku własnego przy korzystaniu z danych w bazie.
+
+!------------------------------------ WAŻNE -------------------------------------!
+W tabeli 'account' znajduje się kolumna 'type', oznaczająca typ konta.
+Kolumna ta przechowuje dane typu enum i przyjmuje tylko 4 możliwe wartości: 'Client', 'Doctor', 'Admin' lub 'Receptionist'.
+Od kolumny tej zależy rodzaj konta użytkownika serwisu, więc należy na niej operować w skryptach witryny.
+!--------------------------------------------------------------------------------!
