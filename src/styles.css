@@ -12,15 +12,37 @@ li, a, button {
     text-decoration: none;
 }
 
-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 20px 2%;
+.header {
     background-color: rgb(56, 141, 141);
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    width: 100%;
+    height: 75px;
+}
+
+div.logo {
+    position: absolute;
+    height: 65px;
+    width: 65px;
+    margin-left: 50%;
+    margin-right: 50%;
+    top: 5px;
+    transform: translate(-50%, 0%)
+}
+
+button.signIn {
+    padding: 9px 25px;
+    background-color: rgb(59, 170, 170);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+    display: inline;
+    float: right;
+    margin-top: 18px;
+    margin-right: 15px;
 }
 
 div.main {
@@ -32,7 +54,7 @@ div.main {
 }
 
 div.mainContainer{
-    width: 75%;
+    width: 80%;
     height: 100%;
     display: flex;
     background-color: beige;
@@ -45,20 +67,19 @@ footer {
     background-color: rgb(56, 141, 141);
 }
 
-div.navLogo {
-    cursor: pointer;
-    margin-right: auto;
-}
-
-div.navLogo picture img{
-    width: 100%;
-    min-width: 120px;
-    height: 120px
-}
 
 div.navbar{
     list-style: none;
     min-inline-size: 32em;
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* div.navbar ul {
+    display: flexbox;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
 }
 
 div.navbar li {
@@ -72,18 +93,9 @@ div.navbar li a {
 
 div.navbar li a:hover {
     color: rgb(41, 100, 100);
-}
+} */
 
-button {
-    padding: 9px 25px;
-    background-color: rgb(59, 170, 170);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    color: white;
-    margin-left: 20px;
-}
+
 
 button:hover {
     background-color: rgb(59, 170, 170, 0.8);
