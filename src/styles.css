@@ -1,3 +1,9 @@
+:root{
+    --mainColor: rgb(242, 247, 248);
+    --secColor: rgb(51, 202, 202);
+    --addColor: rgb(18, 167, 167);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +12,7 @@
 
 
 .header {
-    background-color: rgb(135, 206, 206);
+    background-color: var(--secColor);
     position: sticky;
     position: -webkit-sticky;
     overflow: hidden;
@@ -23,64 +29,66 @@
     vertical-align: middle;
 }
 
-/* div.logo {
-    position: absolute;
-    height: 65px;
-    width: 65px;
-    margin-left: 50%;
-    margin-right: 50%;
-    top: 5px;
-    transform: translate(-50%, 0%)
-} */
-
-button.signIn {
-    padding: 9px 25px;
-    background-color: rgb(59, 170, 170);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    color: white;
-    display: inline;
-    float: right;
-    margin-top: 18px;
-    margin-right: 15px;
-}
-
-div.main {
+.main {
     width: 100%;
-    height: 80%;
+    height: 1000px;
     display: flex;
     justify-content: center;
-    background-color: rgb(231, 243, 239);
+    background-color: var(--mainColor);
 }
 
-div.navbar {
+.box1 {
+    width: 100%;
+    /* height: 300px; */
+    background-image: url("logo_transparent.png")
+}
+
+.navbar {
     width: 100%;
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
+    
 }
 
-div.navbar div{
-    width: 100px;
-    height: 30px;
-    margin: 0 15px;
+.navbar a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: black;
+    border-radius: 25px;
+    border: 5px solid var(--addColor);
+    width: 120px;
+    height: 40px;
+    margin: 10px 20px;
     display: grid;
     place-items: center;
+    text-decoration: none;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
 }
 
-button:hover {
-    background-color: rgb(59, 170, 170, 0.8);
+.navbar a:hover{
+    transform: scale(1.15);
 }
 
-.box1 {
 
+.navbar div:hover{
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;   
+    background: var(--secColor);
+    position: absolute;
+    z-index: 0;
 }
+
 
 footer {
     width: 100%;
     height: 10%;
     align-self: bottom;
-    background-color: rgb(135, 206, 206);
+    background-color: var(--secColor)
 }
+
+
+  
