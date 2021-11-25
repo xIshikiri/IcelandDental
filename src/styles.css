@@ -37,22 +37,20 @@
     overflow: visible;
 }
 
-.login, .register{
+.pasek .login{
+    width: 100px;
     height: 40px;
     background-color: var(--addColor);
     border: none;
-    border-radius: 50px;
+    border-radius: 100px;
     float: right;
     margin-right: 50px;
     margin-top: 10px;
-}
-
-.login{
-    width: 100px;
-}
-
-.register{
-    width: 125px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 20%);
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    color: var(--mainColor);
 }
 
 .box1{
@@ -84,11 +82,15 @@
     position: relative;
 }
 
-.bruh{
+.bruh, .bruh1{
     background-color: brown;
     height: 300px;
     width: 100%;
     display: flexbox;
+}
+
+.bruh1{
+    background-color: orange;
 }
 
 .test1{
@@ -99,7 +101,6 @@
     display: flexbox;
     /* transform: translate(100%, 100%); */
 }
-
 .test2{
     width: 50px; 
     height: 50px;
@@ -108,7 +109,6 @@
     display: flexbox;
     transform: translate(0, -150%);
 }
-
 .test3{
     width: 50px; 
     height: 50px;
@@ -148,6 +148,7 @@
     place-items: center;
     text-decoration: none;
     transition: ease-in-out 0.25s;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
 }
 
 .navbar a:hover{
