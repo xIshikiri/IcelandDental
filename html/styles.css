@@ -38,7 +38,7 @@
     position: relative;
 }
 
-.login_bar .login_button{
+.login_bar .login{
     width: 100px;
     height: 40px;
     background-color: var(--addColor);
@@ -55,7 +55,7 @@
     cursor: pointer;
 }
 
-.login_dropdown{
+.login_box{
     background-color: blueviolet;
     height: 300px;
     width: 200px;
@@ -67,9 +67,9 @@
     display: none;
 }
 
-/* .login:active > .login_box{
+.login:active > .login_box{
     display: block;
-} */
+}
 
 .box_main{
     width: 100%;
@@ -79,26 +79,6 @@
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(var(--mainColor), var(--secColor));
-    
-}
-
-.box_text, .box_text1{
-    background-image: linear-gradient(90deg, #3bb6cc, #1a456d);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 100px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    position: absolute;
-    display: flexbox;
-    animation: lmao 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-
-.box_text1{
-    margin-top: 150px;
-    font-size: 50px;
 }
 
 .main {
@@ -120,16 +100,56 @@
     position: relative;
 }
 
-.container{
-    background-image: linear-gradient(var(--secColor), var(--addColor));
+.container, .container1{
+    background-color: brown;
     height: 300px;
     width: 100%;
     display: flexbox;
+}
 
+.container1{
+    background-color: orange;
 }
 
 .container:hover > .container1{
     background-color: black;
+}
+
+.test1{
+    width: 50px; 
+    height: 50px;
+    background-color: yellow;
+    position: absolute;
+    display: flexbox;
+    transition: ease-in-out 0.5s;
+}
+
+.test1:active{
+    transform: translateX(50%);
+    animation-iteration-count: infinite;
+}
+.test2{
+    width: 50px; 
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    display: flexbox;
+    transform: translate(0, -150%);
+}
+.test3{
+    width: 50px; 
+    height: 50px;
+    background-color: green;
+    position: absolute;
+    display: flexbox;
+    transform: translate(0, 150%);
+}
+
+.box1 img{
+    width: 100%;
+    height: 400px;
+    object-fit: fill;
+    /* position: absolute; */
 }
 
 .navbar {
@@ -147,7 +167,7 @@
     color: var(--fontColor);
     background-color: rgba(242, 247, 248, 0.2);;
     border-radius: 10px;
-    border: 3px solid var(--addColor);
+    border: 2px solid var(--addColor);
     width: 120px;
     height: 40px;
     margin: 10px 20px;
@@ -160,7 +180,8 @@
 
 .navbar a:hover{
     transform: scale(1.15);
-    border-radius: 15px;
+    transform: translateY(-10px);
+    border-radius: 5px;
 }
 
 footer {
@@ -192,27 +213,7 @@ footer a{
 }
 
 
-.show{ display: block }
 
-@keyframes lmao{
-    0%{
-        transform: rotate(-5deg);
-
-    }
-    50%{
-        transform: rotate(5deg);
-
-    }
-    100%{
-        transform: rotate(-5deg);
-
-    }
-}
-
-@keyframes nav_but{
-    from{}
-    to{}
-}
 
 
   
