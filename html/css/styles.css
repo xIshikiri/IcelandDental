@@ -117,17 +117,19 @@
     width: 50%;
     height: auto;
     display: flex;
-    /* justify-content: flex-start; */
     flex-direction: column;
     gap:20px;
     padding: 3em 2em;
     position: relative;
 }
 
-.container{
-    background-image: linear-gradient(var(--secColor), var(--addColor));
+.container_blank, .container{
     height: 300px;
     width: 100%;
+}
+
+.container{
+    background-image: linear-gradient(var(--secColor), var(--addColor));
     display: flexbox;
     border-radius: 3px;
     background-attachment: fixed;
@@ -136,6 +138,7 @@
     background-size: cover;
     box-shadow: -5px 10px 4px rgb(0 0 0 / 20%);
 }
+
 
 .container:hover > .container1{
     background-color: black;
