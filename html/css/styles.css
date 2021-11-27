@@ -179,7 +179,7 @@
     text-decoration: none;
     transition: ease-in-out 0.25s;
     box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
-    z-index: 100;
+    z-index: 80;
 }
 
 .navbar a:hover{
