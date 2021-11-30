@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+
 :root{
-    --mainColor: rgb(242, 247, 248);
+    /* before */
+    /* --mainColor: rgb(242, 247, 248);
     --secColor: rgb(194, 238, 238);
     --addColor: rgb(43, 207, 207);
-    --fontColor: rgb(7, 28, 46);
+    --fontColor: rgb(7, 28, 46); */
+
+    --mainColor: rgb(242, 247, 248);
+    --secColor: #95BDDB;
+    --trdColor: rgb(193, 225, 243);
+    --addColor: #3b89b6;
+    --fontColor: rgb(225, 238, 250);
 }
 
 * {
@@ -56,7 +66,7 @@
 }
 
 .login_dropdown{
-    background-color: var(--secColor);
+    background-color: var(--trdColor);
     height: 300px;
     width: 200px;
     position: absolute;
@@ -78,32 +88,28 @@
     background-size: 100%;
     background: var(--mainColor) url("mountain1.png") no-repeat fixed center right;
     z-index: -100;
+    animation: boxMainAnim 15s ease-out both;
 }
 
-/* .box_main img{
-    width: 100%;
-    height: 400px;
-    position: absolute;
-    z-index: -99;
-} */
 
-.box_text, .box_text1{
-    background-image: linear-gradient(90deg, #3bb6cc, #abd0f3);
+.box_text{
+    background-image: linear-gradient(90deg, var(--secColor), var(--trdColor));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+
     font-size: 100px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Dancing Script';
+    
     position: absolute;
     display: flexbox;
-    animation: lmao 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    margin-top: 175px;
+    text-shadow: 0px 0px 10px rgb(255 255 255 / 10%);
 }
+.box_text_bottom{
 
-.box_text1{
-    margin-top: 150px;
-    font-size: 50px;
+    background-image: url("logo_transparent_white.png");
+    background-size: auto;
 }
 
 .main {
@@ -130,7 +136,7 @@
 }
 
 .container{
-    background-image: linear-gradient(var(--secColor), var(--mainColor));
+    background-image: linear-gradient(var(--trdColor), var(--mainColor));
     display: flexbox;
     border-radius: 3px;
     background-attachment: fixed;
@@ -140,10 +146,6 @@
     box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
 }
 
-
-.container:hover > .container1{
-    background-color: black;
-}
 
 .navbar {
     width: 100%;
@@ -160,9 +162,8 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 14px;
     color: var(--fontColor);
-    background-color: rgba(242, 247, 248, 0.2);;
+    background-color: var(--addColor);
     border-radius: 10px;
-    border: 3px solid var(--addColor);
     width: 120px;
     height: 40px;
     margin: 0px 20px;
@@ -203,7 +204,7 @@ footer a{
     border-bottom: ridge 2px var(--addColor);
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: var(--fontColor);
     padding: 3px 0;
     transition: 0.1s ease-out;
 }
@@ -242,6 +243,18 @@ footer a:hover {
     }
     100%{
         transform:scaleY(1);
-        transform-origin:100% 0}
+        transform-origin:100% 0
     }
+}
 
+
+@keyframes boxMainAnim {
+    0% {
+        transform: scale(1) translateY(0);
+        transform-origin: 50% 84%;
+    }
+    100% {
+        transform: scale(1.15) translateY(15px);
+        transform-origin: bottom;
+    }
+}
