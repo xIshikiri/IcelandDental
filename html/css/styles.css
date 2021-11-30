@@ -75,7 +75,8 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    background-color: var(--mainColor);
+    background-size: 100%;
+    background: var(--mainColor) url("mountain1.png") no-repeat fixed center right;
     z-index: -100;
 }
 
@@ -119,7 +120,7 @@
     display: flex;
     flex-direction: column;
     gap:20px;
-    padding: 3em 2em;
+    padding: 2em 1em;
     position: relative;
 }
 
@@ -136,7 +137,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: -5px 10px 4px rgb(0 0 0 / 20%);
+    box-shadow: 0px 5px 5px rgb(0 0 0 / 20%);
 }
 
 
