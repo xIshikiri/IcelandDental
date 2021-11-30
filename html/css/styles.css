@@ -163,7 +163,7 @@
     font-size: 14px;
     color: var(--fontColor);
     background-color: var(--addColor);
-    border-radius: 10px;
+    border-radius: 5px;
     width: 120px;
     height: 40px;
     margin: 0px 20px;
@@ -177,7 +177,7 @@
 
 .navbar a:hover{
     transform: scale(1.15);
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 footer {
