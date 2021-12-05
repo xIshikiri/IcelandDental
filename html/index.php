@@ -63,8 +63,8 @@
             </div>
         </div>
         <div class="section">
-            <div class="section_our_team">
-                <div class="our_team"> NASZA KADRA </div>
+            <div class="section_text_box">
+                <span class="section_text"> NASZA KADRA </span>
                 <div class="section_in_section">
                     <div class="team_photo_section">
                         <div class="team_photo">
@@ -86,10 +86,27 @@
                 </div>
             </div>
         </div>
+        <div class="section">
+            <div>
+                <span class="section_text">90% KLIENTÓW ZADOWOLONYCH</span>
+            </div>
+            <div>
+                <div class="recom_grid">
+                    <div class="photo_box1">
+                        <img src="css/stock4.png" class="">
+                    </div>
+                    <div class="speech_box1">KOCHAM MAME</div>
+                    <div class="speech_box2">BARDZO</div>
+                    <div class="photo_box2">
+                    <img src="css/stock5.jpg" height="100%" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+        <span class="section_text"></span>
+        </div>
     </div>
-
-
-
     <footer>
         <div class="footer_div">
 
