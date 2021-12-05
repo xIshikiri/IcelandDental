@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html lang="pl-PL">
 <html>
 <head>
@@ -60,7 +63,16 @@
             </div>
         </div>
         <div class="section">
-            <div class="nasza_kadra"></div>
+            <div class="section_our_team">
+                <div class="our_team"> NASZA KADRA POG LOL </div>
+                <div class="team_photo_section">
+                    <div class="team_photo"></div>
+                    <div class="team_photo"></div>
+                    <div class="team_photo"></div>
+                    <div class="team_photo"></div>
+                    <div class="team_photo"></div>
+                </div>
+            </div>
         </div>
     </div>
 
