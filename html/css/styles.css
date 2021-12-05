@@ -174,7 +174,7 @@
 }
 
 .section_our_team{
-    width: 100%;
+    width: 100%; 
 }
 
 .our_team{
@@ -187,6 +187,13 @@
     align-items: center;
     justify-content: center;
     font-size: 80px;
+}
+
+.section_in_section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--secColor);
 }
 
 .team_photo_section{
@@ -204,6 +211,7 @@
     height: 250px;
     width: 200px;
     background-color: var(--addColor);
+
 }
 
 .navbar {

@@ -64,13 +64,25 @@
         </div>
         <div class="section">
             <div class="section_our_team">
-                <div class="our_team"> NASZA KADRA POG LOL </div>
-                <div class="team_photo_section">
-                    <div class="team_photo"></div>
-                    <div class="team_photo"></div>
-                    <div class="team_photo"></div>
-                    <div class="team_photo"></div>
-                    <div class="team_photo"></div>
+                <div class="our_team"> NASZA KADRA </div>
+                <div class="section_in_section">
+                    <div class="team_photo_section">
+                        <div class="team_photo">
+                            <img src="css/dentist1.png" height="100%" width="100%">
+                        </div>
+                        <div class="team_photo">
+                            <img src="css/destist2.png" height="100%" width="100%">
+                        </div>
+                        <div class="team_photo">
+                            <img src="css/ceo.png" height="100%" width="100%">
+                        </div>
+                        <div class="team_photo">
+                            <img src="css/wozny.png" height="100%" width="100%">
+                        </div>
+                        <div class="team_photo">
+                            <img src="css/kadra.gif" height="100%" width="100%">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
