@@ -95,15 +95,15 @@
     width: 100%;
     height: 400px;
     overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .box_main_content{
     width: 100%;
     height: 400px;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
     background-size: 100%;
     background: var(--mainColor) url("mountain1.png") no-repeat fixed center right;
     z-index: -100;
@@ -116,18 +116,24 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    width: 100%;
 
     font-size: 100px;
     font-family: 'Dancing Script';
     
     position: absolute;
-    display: flexbox;
-    margin-top: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 225px;
     text-shadow: 0px 0px 10px rgb(255 255 255 / 10%);
+    text-overflow: clip;
+    z-index: 55;
 }
 
 
-.main {
+.section {
     width: 100%;
     height: auto;
     background-color: var(--mainColor);
@@ -135,7 +141,7 @@
     font-family: var(--fontFamilyMain);
 }
 
-.main_left, .main_right{
+.section_left, .section_right{
     float: left;
     width: 50%;
     height: auto;
@@ -182,7 +188,7 @@
     border-radius: 5px;
     width: 120px;
     height: 40px;
-    margin: 0px 20px;
+    margin-left: 20px;
     display: grid;
     place-items: center;
     text-decoration: none;
