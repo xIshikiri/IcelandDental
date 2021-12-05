@@ -15,6 +15,7 @@
     <div class="header">
         <span class="hEmail">Email: adels123456@gmail.com</span>
         <span class="hTel">Nr. tel: 777 649 754</span>
+        <span class="hTel">Otwarte: pon-pt 8-19</span>
     </div>
 
     <div class="login_bar">
@@ -40,31 +41,33 @@
         <a href="#" class="nav_bttn">Aktualności</a>
         <a href="#" class="nav_bttn">Oferta</a>
         <a href="#" class="nav_bttn">Kontakt</a>
+        <a href="#" class="nav_bttn">Kontakt</a>
+        <a href="#" class="nav_bttn">Kontakt</a>
     </div>
 
     <div class="main">
         <div class="section">
             <div class="section_left">
                 <div class="container">
-                    <img src="css/stock.jpg" width="100%" height="100%">
+                    <img src="css/main2.png">
                 </div>   <!-- 1 -->
 
                 <div class="container">
-                    <img src="css/stock1.jpg" width="100%" height="100%">
+                    <span class="container_text"> Lubie psy </span>
                 </div>   <!-- 2 -->
             </div>
             <div class="section_right">
                 <div class="container">
-                    <span>TYLKO NAJLEPSI SPECJALIŚCI</span>
+                    <span class="container_text"> TYLKO NAJLEPSI SPECJALIŚCI </span>
                 </div>   <!-- 1 --> 
                 <div class="container">
-                    <img src="css/stock3.jpg" width="100%" height="100%">
+                    <img src="css/main1.png">
                 </div>   <!-- 2 -->
             </div>
         </div>
         <div class="section">
-            <div class="section_our_team">
-                <div class="our_team"> NASZA KADRA </div>
+            <div class="section_text_box">
+                <span class="section_text"> NASZA KADRA </span>
                 <div class="section_in_section">
                     <div class="team_photo_section">
                         <div class="team_photo">
@@ -86,10 +89,32 @@
                 </div>
             </div>
         </div>
+        <div class="section">
+            <div>
+                <span class="section_text"> 90% KLIENTÓW ZADOWOLONYCH </span>
+            </div>
+            <div>
+                <div class="recom_grid">
+                    <div class="photo_box1">
+                        <img src="css/okayDude.png">
+                    </div>
+                    <div class="speech_box1">
+                        <span class="speech_text">
+                             "Mój ostatni zabieg był bezbolesny, a różnicę widzę od razu!"
+                        </span>
+                        <span class="speech_author"> ~Patryk P. </span>
+                    </div>
+                    <div class="speech_box2">
+                        <span class="speech_text"> "Ząb przestał mnie boleć zaraz po wizycie! Zdolności waszych dentystów są nie z tej Ziemi!" </span>
+                        <span class="speech_author"> ~Hubert M. </span>
+                    </div>
+                    <div class="photo_box2">
+                    <img src="css/okayMan2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-
     <footer>
         <div class="footer_div">
 
