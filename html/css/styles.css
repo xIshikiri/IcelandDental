@@ -133,12 +133,16 @@
 }
 
 
-.section {
+.main {
     width: 100%;
-    height: auto;
+    height: max-content;
     background-color: var(--mainColor);
-    display: flex;
     font-family: var(--fontFamilyMain);
+    position: relative;
+}
+
+.section{
+    height: max-content;
 }
 
 .section_left, .section_right{
@@ -166,6 +170,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0px 0px 3px rgb(0 0 0 / 10%);
+}
+
+.nasza_kadra{
+    height: 300px;
+    width: 100%;
+    background-color: red;
 }
 
 
