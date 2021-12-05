@@ -40,6 +40,8 @@
         <a href="#" class="nav_bttn">Aktualności</a>
         <a href="#" class="nav_bttn">Oferta</a>
         <a href="#" class="nav_bttn">Kontakt</a>
+        <a href="#" class="nav_bttn">Kontakt</a>
+        <a href="#" class="nav_bttn">Kontakt</a>
     </div>
 
     <div class="main">
@@ -50,12 +52,12 @@
                 </div>   <!-- 1 -->
 
                 <div class="container">
-                    <img src="css/stock1.jpg" width="100%" height="100%">
+                    <span class="container_text"> Lubie psy </span>
                 </div>   <!-- 2 -->
             </div>
             <div class="section_right">
                 <div class="container">
-                    <span>TYLKO NAJLEPSI SPECJALIŚCI</span>
+                    <span class="container_text"> TYLKO NAJLEPSI SPECJALIŚCI </span>
                 </div>   <!-- 1 --> 
                 <div class="container">
                     <img src="css/stock3.jpg" width="100%" height="100%">
@@ -88,23 +90,26 @@
         </div>
         <div class="section">
             <div>
-                <span class="section_text">90% KLIENTÓW ZADOWOLONYCH</span>
+                <span class="section_text"> 90% KLIENTÓW ZADOWOLONYCH </span>
             </div>
             <div>
                 <div class="recom_grid">
                     <div class="photo_box1">
                         <img src="css/stock4.png" class="">
                     </div>
-                    <div class="speech_box1">KOCHAM MAME</div>
-                    <div class="speech_box2">BARDZO</div>
+                    <div class="speech_box1">
+                        <span class="speech_text"> "Naprawde giga szef i polecam ich, dużo płacą, i wgl serio git00wa" </span>
+                        <span class="speech_author"> ~Patryk P. </span>
+                    </div>
+                    <div class="speech_box2">
+                        <span class="speech_text"> "Nie lubie ich smierdza iwgl naprawde glupie to wszystko pomocy nie lubie robic stron internetowcych" </span>
+                        <span class="speech_author"> ~Jakiś tam Hubert M. </span>
+                    </div>
                     <div class="photo_box2">
                     <img src="css/stock5.jpg" height="100%" width="100%">
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="section">
-        <span class="section_text"></span>
         </div>
     </div>
     <footer>
