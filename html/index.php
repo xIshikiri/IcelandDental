@@ -15,6 +15,7 @@
     <div class="header">
         <span class="hEmail">Email: adels123456@gmail.com</span>
         <span class="hTel">Nr. tel: 777 649 754</span>
+        <span class="hTel">Otwarte: pon-pt 8-19</span>
     </div>
 
     <div class="login_bar">
@@ -98,11 +99,13 @@
                         <img src="css/okayDude.png">
                     </div>
                     <div class="speech_box1">
-                        <span class="speech_text"> "Naprawde giga szef i polecam ich, dużo płacą, i wgl serio git00wa" </span>
+                        <span class="speech_text">
+                             "Mój ostatni zabieg był bezbolesny, a różnicę widzę od razu!"
+                        </span>
                         <span class="speech_author"> ~Patryk P. </span>
                     </div>
                     <div class="speech_box2">
-                        <span class="speech_text"> "Nie lubie ich smierdza iwgl naprawde glupie to wszystko pomocy nie lubie robic stron internetowcych" </span>
+                        <span class="speech_text"> "Ząb przestał mnie boleć zaraz po wizycie! Zdolności waszych dentystów są nie z tej Ziemi!" </span>
                         <span class="speech_author"> ~Hubert M. </span>
                     </div>
                     <div class="photo_box2">
