@@ -85,6 +85,9 @@
                         <div class="team_photo">
                             <img src="css/kadra.gif" height="100%" width="100%">
                         </div>
+                        <div class="team_photo">
+                            <img src="css/plumber.png" height="100%" width="100%">
+                        </div>
                     </div>
                 </div>
             </div>
