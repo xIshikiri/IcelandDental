@@ -48,7 +48,7 @@
         <div class="section">
             <div class="section_left">
                 <div class="container">
-                    <img src="css/stock.jpg" width="100%" height="100%">
+                    <img src="css/main2.png">
                 </div>   <!-- 1 -->
 
                 <div class="container">
@@ -60,7 +60,7 @@
                     <span class="container_text"> TYLKO NAJLEPSI SPECJALIŚCI </span>
                 </div>   <!-- 1 --> 
                 <div class="container">
-                    <img src="css/stock3.jpg" width="100%" height="100%">
+                    <img src="css/main1.png">
                 </div>   <!-- 2 -->
             </div>
         </div>
@@ -103,7 +103,7 @@
                     </div>
                     <div class="speech_box2">
                         <span class="speech_text"> "Nie lubie ich smierdza iwgl naprawde glupie to wszystko pomocy nie lubie robic stron internetowcych" </span>
-                        <span class="speech_author"> ~Jakiś tam Hubert M. </span>
+                        <span class="speech_author"> ~Hubert M. </span>
                     </div>
                     <div class="photo_box2">
                     <img src="css/stock5.jpg" height="100%" width="100%">
