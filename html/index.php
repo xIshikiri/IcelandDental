@@ -95,7 +95,7 @@
             <div>
                 <div class="recom_grid">
                     <div class="photo_box1">
-                        <img src="css/stock4.png" class="">
+                        <img src="css/okayDude.png">
                     </div>
                     <div class="speech_box1">
                         <span class="speech_text"> "Naprawde giga szef i polecam ich, dużo płacą, i wgl serio git00wa" </span>
@@ -106,7 +106,7 @@
                         <span class="speech_author"> ~Hubert M. </span>
                     </div>
                     <div class="photo_box2">
-                    <img src="css/stock5.jpg" height="100%" width="100%">
+                    <img src="css/okayMan2.png">
                     </div>
                 </div>
             </div>
