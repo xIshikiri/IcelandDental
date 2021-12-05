@@ -34,8 +34,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
                 }
             }
             if (empty($error)) {
-                $insertQuery = $db->prepare("INSERT INTO account ('Email', 'Password', 'Type') VALUES (?, ?, ?); INSERT INTO client ('Name', 'Surname', 'DateOfBirth', 'Adress', 'PhoneNumber', 'Email') VALUES (?, ?, ?, ?, ?, ?)");
-                $insertQuery->bind_param("sssssssss", $email, $password_hash, $type, $name, $surname, $dob, $adress, $phone, $email);
+                $insertQuery = $db->prepare("INSERT INTO account (Email, Password, Type) VALUES (?, ?, ?);");
+                $insertQuery->bind_param('sss', $email, $password_hash, $type);
+                $result = $insertQuery->execute();
+                $insertQuery = $db->prepare("INSERT INTO client (Name, Surname, DateOfBirth, Adress, PhoneNumber, Email) VALUES (?, ?, ?, ?, ?, ?);");
+                $insertQuery->bind_param('ssssss', $name, $surname, $dob, $adress, $phone, $email);
                 $result = $insertQuery->execute();
                 if ($result) {
                     $error .='<p>Rejestracja powiodła się, możesz się teraz zalogować.</p>';
