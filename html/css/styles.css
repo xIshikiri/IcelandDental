@@ -240,8 +240,29 @@ body{
 .team_photo{
     height: 250px;
     width: 200px;
-    background-color: var(--addColor);
+    overflow: hidden;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.team_photo img{
+    background-size: cover;
+    height: 100%;
+
+    box-shadow: 0 0px 5px rgb(0 0 0 / 20%);
+}
+
+.team_text{
+    position: absolute;
+
+
+    font-family: var(--fontFamilyContainer);
+    color: var(--fontColor);
 }
 
 .recom_grid{
@@ -262,17 +283,14 @@ body{
     grid-row-start: 1;
     grid-row-end: 3;
 
-    background-color: var(--secColor);
     overflow: hidden;
-}
 
-.photo_box1 img, .photo_box2 img{
-    background-size: cover;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    transform: translateX(-35%);
-
-    box-shadow: 0 0px 5px rgb(0 0 0 / 20%);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .photo_box2{
@@ -281,6 +299,22 @@ body{
     grid-row-end: 3;
 
     overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.photo_box1 img, .photo_box2 img{
+    background-size: cover;
+    height: 100%;
+
+
+    box-shadow: 0 0px 5px rgb(0 0 0 / 20%);
+    background-color: var(--mainColor);
 }
 
 .speech_box1, .speech_box2{
@@ -292,6 +326,7 @@ body{
     border-top: solid 15px var(--addColor);
 
     box-shadow: 0 0px 5px rgb(0 0 0 / 20%);
+    
 }
 
 .speech_box1{
@@ -473,3 +508,5 @@ footer .footer_logo{
         transform-origin: bottom;
     }
 }
+
+

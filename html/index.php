@@ -71,22 +71,20 @@
                 <div class="section_in_section">
                     <div class="team_photo_section">
                         <div class="team_photo">
-                            <img src="css/dentist1.png" height="100%" width="100%">
+                            <img src="css/dentist1.png">
                         </div>
                         <div class="team_photo">
-                            <img src="css/destist2.png" height="100%" width="100%">
+                            <img src="css/destist2.png">
                         </div>
                         <div class="team_photo">
-                            <img src="css/ceo.png" height="100%" width="100%">
+                            <div><img src="css/ceo.png"> <span class="team_text"></span></div>
+                            
                         </div>
                         <div class="team_photo">
-                            <img src="css/wozny.png" height="100%" width="100%">
+                            <img src="css/wozny.png">
                         </div>
                         <div class="team_photo">
-                            <img src="css/kadra.gif" height="100%" width="100%">
-                        </div>
-                        <div class="team_photo">
-                            <img src="css/plumber.png" height="100%" width="100%">
+                            <img src="css/plumber.png">
                         </div>
                     </div>
                 </div>
@@ -94,7 +92,7 @@
         </div>
         <div class="section">
             <div>
-                <span class="section_text"> 90% KLIENTÓW ZADOWOLONYCH </span>
+                <span class="section_text"> 98% KLIENTÓW ZADOWOLONYCH </span>
             </div>
             <div>
                 <div class="recom_grid">
