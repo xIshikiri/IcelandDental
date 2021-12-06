@@ -53,12 +53,14 @@
                 </div>   <!-- 1 -->
 
                 <div class="container">
-                    <span class="container_text"> Lubie psy </span>
+                    <span class="container_text"> Nie czekaj! </span>
+                    <span class="container_text"> Umów się już teraz! </span>
                 </div>   <!-- 2 -->
             </div>
             <div class="section_right">
                 <div class="container">
-                    <span class="container_text"> TYLKO NAJLEPSI SPECJALIŚCI </span>
+                    <span class="container_text"> Boli ząb? </span>
+                    <span class="container_text"> Pomożemy bezboleśnie! </span>
                 </div>   <!-- 1 --> 
                 <div class="container">
                     <img src="css/main1.png">
@@ -72,19 +74,23 @@
                     <div class="team_photo_section">
                         <div class="team_photo">
                             <img src="css/dentist1.png">
+                            <span class="team_text">helfen mich bitte</span> 
                         </div>
                         <div class="team_photo">
                             <img src="css/destist2.png">
+                            <span class="team_text">Dentysta</span> 
                         </div>
                         <div class="team_photo">
-                            <div><img src="css/ceo.png"> <span class="team_text"></span></div>
-                            
+                            <img src="css/ceo.png"> 
+                            <span class="team_text">CEO</span>  
                         </div>
                         <div class="team_photo">
                             <img src="css/wozny.png">
+                            <span class="team_text">Woźny</span> 
                         </div>
                         <div class="team_photo">
                             <img src="css/plumber.png">
+                            <span class="team_text">Plumber</span> 
                         </div>
                     </div>
                 </div>
