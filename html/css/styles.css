@@ -163,7 +163,7 @@ body{
     flex-direction: column;
     gap:20px;
     row-gap: 100px;
-    padding: 2em 1em;
+    padding: 2em 2em;
     position: relative;
 }
 
@@ -189,12 +189,16 @@ body{
     align-items: center;
 }
 
-.container_text{
+.container_text, .container_text1{
     font-family: var(--fontFamilyContainer);
     color: var(--addColor);
-    font-size: 50px;
+    font-size: 40px;
     display: flex;
     justify-content: center;
+}
+
+.container_text1{
+    font-size: 60px;
 }
 
 .container img{
@@ -251,6 +255,7 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
+    background-color: var(--trdColor);
 
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;

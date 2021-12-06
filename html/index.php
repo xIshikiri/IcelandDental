@@ -54,14 +54,14 @@
                 </div>   <!-- 1 -->
 
                 <div class="container">
-                    <span class="container_text"> Nie czekaj! </span>
-                    <span class="container_text"> Umów się już teraz! </span>
+                    <span class="container_text"> Karta klienta </span>
+                    <span class="container_text"> już od 3 wizyty! </span>
                 </div>   <!-- 2 -->
             </div>
             <div class="section_right">
                 <div class="container">
-                    <span class="container_text"> Boli ząb? </span>
-                    <span class="container_text"> Pomożemy bezboleśnie! </span>
+                    <span class="container_text"> Nie czekaj! </span>
+                    <span class="container_text"> Umów się już teraz! </span>
                 </div>   <!-- 1 --> 
                 <div class="container">
                     <img src="css/main1.png">
@@ -70,12 +70,12 @@
         </div>
         <div class="section">
             <div class="section_text_box">
-                <span class="section_text"> NASZA KADRA </span>
+                <span class="section_text"> TOP Pracownicy </span>
                 <div class="section_in_section">
                     <div class="team_photo_section">
                         <div class="team_photo">
                             <img src="css/dentist1.png">
-                            <span class="team_text">helfen mich bitte</span> 
+                            <span class="team_text">Dentysta</span> 
                         </div>
                         <div class="team_photo">
                             <img src="css/destist2.png">
@@ -91,7 +91,7 @@
                         </div>
                         <div class="team_photo">
                             <img src="css/plumber.png">
-                            <span class="team_text">Plumber</span> 
+                            <span class="team_text">Hydraulik</span> 
                         </div>
                     </div>
                 </div>
