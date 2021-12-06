@@ -5,6 +5,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
+    <link rel="icon" href="css/logo_square_120px.png" type="image/icon type">
     <link rel="stylesheet" href="css/styles.css">
     <script src="scripts/login_anim.js"></script>
     
