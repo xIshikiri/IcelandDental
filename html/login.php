@@ -18,16 +18,22 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])){
     }
 
     if(empty($error)){
-        if ($query = $db -> prepare("SELECT * FROM users WHERE email = ?")){
+        if ($query = $db -> prepare("SELECT * FROM account WHERE email = ?;")){
             $query -> bind_param('s', $email);
             $query -> execute();
-            $row = $query -> fetch();
-            if($row) {
-                if (password_verify($password, $row['password'])){
-                    $_SESSION["userid"] = $row["ID"];
-                    $_SESSION["user"] = $row;
+            
+            $result = $query->get_result();
+            $user = $result->fetch_assoc();
 
-                    header("location: home.php");
+            $rows = $result -> num_rows;
+            $pwd = $user['password'];
+
+            if($result) {
+                if (password_verify($password, $user['Password'])){
+                    $_SESSION["userid"] = $user['ID'];
+                    $_SESSION["user"] = $user;
+
+                    header("location: index.php");
                     exit;
                 }
                 else {
@@ -37,12 +43,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])){
             else {
                 $error .= '<p>Nie ma konta o tym adresie email.</p>';
             }
+            $query -> close();
         }
-        $query -> close();
     }
     mysqli_close($db);
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -66,6 +71,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])){
                 <div>
                     <input type="submit" name="submit" required>
                 </div>
+                <?php 
+                
+                echo $error;
+                echo "email: " . $email;
+                echo "Wyników: " . $rows;
+                echo "Hash: " . $pwd;
+                echo "Haslo: " . $password;
+
+                ?>
                 <p>Nie masz konta? <a href="register.php">Zarejestruj się</a>.</p>
             </form>
         </div>
