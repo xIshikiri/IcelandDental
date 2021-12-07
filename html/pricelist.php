@@ -67,7 +67,7 @@
             </div>
             <div class="pricebox-offer">
                 <span class="offer-name">Makowiec</span>
-                <span class="offer-cost">75 zł</span>
+                <span class="offer-cost">godność i prawa człoweka</span>
             </div>
         </div>
     
