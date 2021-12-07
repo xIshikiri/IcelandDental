@@ -4,7 +4,7 @@ function show_login_box() {
 
 window.onclick = function(event) {
   if (!event.target.matches('.login_button')) {
-    var dropdowns = document.getElementsByClassName("login_dropdown");
+    var dropdowns = document.getElementById("loginDropdown");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
