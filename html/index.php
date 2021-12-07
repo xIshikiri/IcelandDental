@@ -33,17 +33,17 @@
     </div>
 
     <div class="box_main">
-        <div class="box_text">Iceland Dental</div>
+        <a href="index.php" class="box_text">Iceland Dental</a>
         <div class="box_main_content"></div>
     </div>
 
     <div class="navbar">
-        <a href="#" class="home"><div class="home_bttn"></div></a>
-        <a href="#" class="nav_bttn">Aktualności</a>
-        <a href="#" class="nav_bttn">Oferta</a>
-        <a href="#" class="nav_bttn">Kontakt</a>
-        <a href="#" class="nav_bttn">Kontakt</a>
-        <a href="#" class="nav_bttn">Kontakt</a>
+        <a href="index.php" class="home"><div class="home_bttn"></div></a>
+        <a href="updates.php" class="nav_bttn">Aktualności</a>
+        <a href="offer.php" class="nav_bttn">Oferta</a>
+        <a href="pricelist.php" class="nav_bttn">Cennik</a>
+        <a href="about.php" class="nav_bttn">O nas!</a>
+        <a href="contact.php" class="nav_bttn">Kontakt</a>
     </div>
 
     <div class="main">
