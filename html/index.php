@@ -22,11 +22,16 @@
     <div class="login_bar">
         <button class="login_button" onclick="show_login_box()">ZALOGUJ
             <div class="login_dropdown" id="loginDropdown">
+                <?php 
+                if(isset($_SESSION['userid'])){
+                    echo "<a href='logout.php'><input type='button' name='logoutButton' value='Wyloguj się'></a>";
+                }
+                if(!isset($_SESSION['userid'])){
+                    echo "<a href='login.php'><input type='button' name='logoutButton' value='Zaloguj się'></a>";
+                }
                 
-                <input type="text">
-                <input type="password">
-                <button class="submit"></button>
-                
+                ?>
+
             </div>
         </button>
         
@@ -126,7 +131,7 @@
                         <span class="speech_author"> ~Hubert M. </span>
                     </div>
                     <div class="photo_box2">
-                    <img src="css/okayMan2.png">
+                    <img src="css/hubert.png">
                     </div>
                 </div>
             </div>
