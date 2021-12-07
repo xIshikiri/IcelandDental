@@ -40,7 +40,6 @@
     <div class="navbar">
         <a href="index.php" class="home"><div class="home_bttn"></div></a>
         <a href="updates.php" class="nav_bttn">Aktualności</a>
-        <a href="offer.php" class="nav_bttn">Oferta</a>
         <a href="pricelist.php" class="nav_bttn">Cennik</a>
         <a href="about.php" class="nav_bttn">O nas!</a>
         <a href="contact.php" class="nav_bttn">Kontakt</a>
@@ -68,7 +67,7 @@
             </div>
             <div class="pricebox-offer">
                 <span class="offer-name">Makowiec</span>
-                <span class="offer-cost">75 zł</span>
+                <span class="offer-cost">godność i prawa człoweka</span>
             </div>
         </div>
     

@@ -267,18 +267,25 @@ body{
     height: 100%;
 
     box-shadow: 0 0px 5px rgb(0 0 0 / 20%);
-
-    
 }
 
-.team_text{
+.team_photo_gradient{
+    position: absolute;
+}
+
+.team_text, .team_text1{
     position: absolute;
 
-    margin-top: 100%;
+    margin-top: 70%;
 
-    font-size: 20px;
+    font-size: 40px;
     font-family: var(--fontFamilyContainer);
     color: var(--fontColor);
+}
+
+.team_text1{
+    margin-top: 100%;
+    font-size: 20px;
 }
 
 .recom_grid{
@@ -524,5 +531,4 @@ footer .footer_logo{
         transform-origin: bottom;
     }
 }
-
 

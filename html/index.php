@@ -40,7 +40,6 @@
     <div class="navbar">
         <a href="index.php" class="home"><div class="home_bttn"></div></a>
         <a href="updates.php" class="nav_bttn">Aktualności</a>
-        <a href="offer.php" class="nav_bttn">Oferta</a>
         <a href="pricelist.php" class="nav_bttn">Cennik</a>
         <a href="about.php" class="nav_bttn">O nas!</a>
         <a href="contact.php" class="nav_bttn">Kontakt</a>
@@ -54,13 +53,13 @@
                 </div>   <!-- 1 -->
 
                 <div class="container">
-                    <span class="container_text"> Karta klienta </span>
+                    <span class="container_text1"> Karta klienta </span>
                     <span class="container_text"> już od 3 wizyty! </span>
                 </div>   <!-- 2 -->
             </div>
             <div class="section_right">
                 <div class="container">
-                    <span class="container_text"> Nie czekaj! </span>
+                    <span class="container_text1"> Nie czekaj </span>
                     <span class="container_text"> Umów się już teraz! </span>
                 </div>   <!-- 1 --> 
                 <div class="container">
@@ -75,23 +74,29 @@
                     <div class="team_photo_section">
                         <div class="team_photo">
                             <img src="css/dentist1.png">
-                            <span class="team_text">Dentysta</span> 
+                            <span class="team_text">Dentysta</span>
+                            <span class="team_text1">Johny Sinus</span>  
                         </div>
                         <div class="team_photo">
                             <img src="css/destist2.png">
-                            <span class="team_text">Dentysta</span> 
+                            <span class="team_text">Dentysta</span>
+                            <span class="team_text1">Jan Siny</span> 
                         </div>
                         <div class="team_photo">
-                            <img src="css/ceo.png"> 
-                            <span class="team_text">CEO</span>  
+                            <img src="css/ceo.png">
+                            <div class="team_photo_gradient"></div> 
+                            <span class="team_text">CEO</span>
+                            <span class="team_text1">Janusz Sinowiak</span>  
                         </div>
                         <div class="team_photo">
                             <img src="css/wozny.png">
-                            <span class="team_text">Woźny</span> 
+                            <span class="team_text">Woźny</span>
+                            <span class="team_text1">January Sinowski</span> 
                         </div>
                         <div class="team_photo">
                             <img src="css/plumber.png">
-                            <span class="team_text">Hydraulik</span> 
+                            <span class="team_text">Hydraulik</span>
+                            <span class="team_text1">Jerzy Sinner</span> 
                         </div>
                     </div>
                 </div>
