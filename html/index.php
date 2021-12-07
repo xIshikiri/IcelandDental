@@ -33,17 +33,17 @@
     </div>
 
     <div class="box_main">
-        <div class="box_text">Iceland Dental</div>
+        <a href="index.php" class="box_text">Iceland Dental</a>
         <div class="box_main_content"></div>
     </div>
 
     <div class="navbar">
-        <a href="#" class="home"><div class="home_bttn"></div></a>
-        <a href="#" class="nav_bttn">Aktualności</a>
-        <a href="#" class="nav_bttn">Oferta</a>
-        <a href="#" class="nav_bttn">Kontakt</a>
-        <a href="#" class="nav_bttn">Kontakt</a>
-        <a href="#" class="nav_bttn">Kontakt</a>
+        <a href="index.php" class="home"><div class="home_bttn"></div></a>
+        <a href="updates.php" class="nav_bttn">Aktualności</a>
+        <a href="offer.php" class="nav_bttn">Oferta</a>
+        <a href="pricelist.php" class="nav_bttn">Cennik</a>
+        <a href="about.php" class="nav_bttn">O nas!</a>
+        <a href="contact.php" class="nav_bttn">Kontakt</a>
     </div>
 
     <div class="main">
@@ -54,14 +54,14 @@
                 </div>   <!-- 1 -->
 
                 <div class="container">
-                    <span class="container_text"> Nie czekaj! </span>
-                    <span class="container_text"> Umów się już teraz! </span>
+                    <span class="container_text"> Karta klienta </span>
+                    <span class="container_text"> już od 3 wizyty! </span>
                 </div>   <!-- 2 -->
             </div>
             <div class="section_right">
                 <div class="container">
-                    <span class="container_text"> Boli ząb? </span>
-                    <span class="container_text"> Pomożemy bezboleśnie! </span>
+                    <span class="container_text"> Nie czekaj! </span>
+                    <span class="container_text"> Umów się już teraz! </span>
                 </div>   <!-- 1 --> 
                 <div class="container">
                     <img src="css/main1.png">
@@ -70,12 +70,12 @@
         </div>
         <div class="section">
             <div class="section_text_box">
-                <span class="section_text"> NASZA KADRA </span>
+                <span class="section_text"> TOP Pracownicy </span>
                 <div class="section_in_section">
                     <div class="team_photo_section">
                         <div class="team_photo">
                             <img src="css/dentist1.png">
-                            <span class="team_text">helfen mich bitte</span> 
+                            <span class="team_text">Dentysta</span> 
                         </div>
                         <div class="team_photo">
                             <img src="css/destist2.png">
@@ -91,7 +91,7 @@
                         </div>
                         <div class="team_photo">
                             <img src="css/plumber.png">
-                            <span class="team_text">Plumber</span> 
+                            <span class="team_text">Hydraulik</span> 
                         </div>
                     </div>
                 </div>
