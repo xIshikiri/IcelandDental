@@ -271,6 +271,11 @@ body{
 
 .team_photo_gradient{
     position: absolute;
+
+    height: 60%;
+    width: 100%;
+    margin-top: 115px;
+    background-image: linear-gradient(rgb(0 0 0 / 0%), rgb(40 40 40 / 80%));
 }
 
 .team_text, .team_text1{

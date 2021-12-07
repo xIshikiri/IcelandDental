@@ -74,11 +74,13 @@
                     <div class="team_photo_section">
                         <div class="team_photo">
                             <img src="css/dentist1.png">
+                            <div class="team_photo_gradient"></div> 
                             <span class="team_text">Dentysta</span>
                             <span class="team_text1">Johny Sinus</span>  
                         </div>
                         <div class="team_photo">
                             <img src="css/destist2.png">
+                            <div class="team_photo_gradient"></div> 
                             <span class="team_text">Dentysta</span>
                             <span class="team_text1">Jan Siny</span> 
                         </div>
@@ -90,11 +92,13 @@
                         </div>
                         <div class="team_photo">
                             <img src="css/wozny.png">
+                            <div class="team_photo_gradient"></div> 
                             <span class="team_text">Woźny</span>
                             <span class="team_text1">January Sinowski</span> 
                         </div>
                         <div class="team_photo">
                             <img src="css/plumber.png">
+                            <div class="team_photo_gradient"></div> 
                             <span class="team_text">Hydraulik</span>
                             <span class="team_text1">Jerzy Sinner</span> 
                         </div>
