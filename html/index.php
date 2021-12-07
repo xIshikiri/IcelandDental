@@ -131,7 +131,7 @@
                         <span class="speech_author"> ~Hubert M. </span>
                     </div>
                     <div class="photo_box2">
-                    <img src="css/okayMan2.png">
+                    <img src="css/hubert.png">
                     </div>
                 </div>
             </div>
