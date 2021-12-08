@@ -27,11 +27,11 @@
                     echo "<a href='logout.php'><input type='button' name='logoutButton' value='Wyloguj się'></a>";
                 }
                 if(!isset($_SESSION['userid'])){
-                    echo "<a href='login.php'><input type='button' name='logoutButton' value='Zaloguj się'></a>";
+                    echo "<a href='login.php'><input type='button' class='lol' name='logoutButton' value='Zaloguj się'></a>";
+                    echo "<div class='lol'></div>";
                 }
                 
                 ?>
-
             </div>
         </button>
         
