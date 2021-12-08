@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8"/>
     <link rel="icon" href="css/logo_square_120px.png" type="image/icon type">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="scripts/login_anim.js"></script>
     
     <title>Iceland Dental</title>
@@ -52,15 +52,15 @@
 
     <div class="main">
         <p> Kontakt </p>
-        <div class="section">
-            <div class="info">
-                <div class="info_box">
+        <div class="contact_section">
+            <div class="contact_info">
+                <div class="contact_info_box">
                     <p> Iceland Dental</p>
                     <span>Wysokospecjalistyczna stomatologia w Toruniu</span>
                     <span>Nr. tel: 777 649 754</span>
                     <span>Adres E-mail: adels123456@gmail.com</span>
                 </div>
-                <div class="info_box">
+                <div class="contact_info_box">
                     <p> Znajdziesz nas tutaj! </p>
                     <span>adres: józefa etc</span>
                 </div>
@@ -69,7 +69,7 @@
 
         <p>Znajdziesz nas tutaj!:</p>
 
-        <div class="info">
+        <div class="contact_info">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2399.8553065363185!2d18.58224975112481!3d53.02296400648674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47033456e3f13bc9%3A0x5c1aecc91437ab48!2sInternat%20ZSMEiE!5e0!3m2!1spl!2spl!4v1638895628963!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>

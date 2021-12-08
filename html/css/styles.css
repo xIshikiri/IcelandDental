@@ -151,6 +151,16 @@ body{
     flex-direction: column;
 }
 
+.main p{
+    font-size: 50px;
+    font-family: var(--fontFamilyMain);
+    color: var(--addColor);
+    text-shadow: 0 2px 3px rgb(0 0 0 / 20%);
+
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 .wrap{
     width: 100%;
     height: 400px;
@@ -407,6 +417,274 @@ body{
     font-size: 40px;
 }
 
+.updates-body{
+    width: 100%;
+    height: max-content;
+
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--mainColor);
+}
+
+.updates{
+    width: 70%;
+    height: max-content;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+
+    background-color: var(--mainColor);
+}
+
+.updates-block{
+    background-color: var(--trdColor);
+    box-shadow: 0 0 3px rgb(0 0 0 / 20%);
+    border-radius: 3px;
+
+    height: max-content;
+    max-height: 250px;
+    width: 100%;
+    padding: 25px 60px;
+    
+
+    display: flex;
+    flex-direction: column;
+}
+
+.updates-title, .updates-date, .updates-content{
+    font-size: 30px;
+    color: var(--addColor);
+    font-family: var(--fontFamilyMain);
+    margin-bottom: 5px;
+
+    text-decoration: none;
+}
+
+.updates-title:hover, .updates-date:hover, .updates-content:hover{
+    text-decoration: underline;
+}
+
+.updates-date{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.updates-content{
+    font-size: 15px;
+    max-height: max-content;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+}
+
+.pricebox-wrap{
+    width: 100%;
+    height: max-content;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--mainColor);
+}
+
+.pricebox-name{
+    height: 50px;
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+
+    margin-top: 40px;
+
+    background-color: var(--addColor);
+}
+
+.pricebox-name span{
+    color: var(--fontColor);
+
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.pricebox-offer{
+    height: 75px;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    display: flex;
+    align-items: center;
+
+    
+    background-color: var(--mainColor);
+    border-bottom: solid 2px var(--trdColor);
+}
+
+.pricebox-offer-name, .pricebox-offer-cost{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+    font-family: var(--fontFamilyFooter);
+    color: var(--addColor);
+}
+
+.pricebox-offer-name{
+    width: 75%;
+    float: left;
+
+    border-right: solid 2px var(--trdColor);
+}
+
+.pricebox-offer-cost{
+    float: right;
+    width: 25%;
+}
+
+.about-title{
+    font-size: 30px;
+    font-family: var(--fontFamilyMain);
+    color: var(--addColor);
+    text-shadow: 0 2px 3px rgb(0 0 0 / 20%);
+
+    padding-top: 75px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.about-wrap{
+    width: 100%;
+    height: max-content;
+
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    background-color: var(--mainColor);
+}
+
+.about-wrap-section{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+
+    padding: 50px;
+}
+
+.about-wrap-25{
+    height: 100%;
+    width: 25%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--mainColor);
+}
+
+.about-wrap-photo{
+    background-size: cover;
+    background-color: var(--secColor);
+    
+    border-radius: 360px;
+    height: 100%;
+    border: solid 2px var(--addColor);
+}
+
+.about-wrap-75{
+    height: 100%;
+    width: 75%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-wrap-text{
+    width: 100%;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+
+    border-bottom: solid 5px var(--addColor);
+}
+
+.contact_section{
+    height: max-content;
+    overflow: hidden;
+}
+
+.contact_info{
+    margin: 50px 0px;
+
+    height: max-content;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.contact_info_box{
+    width: 35%;
+    height: 300px;
+
+    padding: 40px;
+
+    box-shadow: 0 2px 3px rgb(0 0 0 / 20%);
+    background-color: var(--trdColor);
+}
+
+.contact_info_box p {
+    font-size: 35px;
+}
+
+.contact_info_box span {
+    font-size: 20px;
+    margin-top: 15px;
+
+    float: left;
+}
+
+.login_wrap{
+    height: max-content;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--mainColor);
+}
+
+.login_block{
+    width: max-content;
+    height: 200px;
+
+    background-color: var(--trdColor);
+    padding: 20px 20px;
+}
+
+.login_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .navbar {
     width: 100%;
     display: flex;
@@ -454,6 +732,22 @@ body{
     display: flex;
     background-position: center;
     margin: 0;
+}
+
+.AdminPanel {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.AdminPanelContent {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: black solid 2px;
+
 }
 
 footer {

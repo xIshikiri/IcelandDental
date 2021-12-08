@@ -94,24 +94,25 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])){
     </div>
 
     <div class="main">
-        
-        <div class="wrap">
-        <h2>Zaloguj się</h2>
-        <form action="" method="post">
-                <div>
-                    <label>Email: </label>
-                    <input type="email" name="email" required>
-                </div>
-                <div>
-                    <label>Hasło: </label>
-                    <input type="password" name="password" required>
-                </div>
-                <div>
-                    <input type="submit" name="submit" required>
-                </div>
-                <?php echo $error;?>
-                <p>Nie masz konta? <a href="register.php">Zarejestruj się</a>.</p>
-            </form>
+        <p>Zaloguj się</p>
+        <div class="login_wrap">
+            <div class="login_block">
+                <form action="" method="post">
+                    <div>
+                        <label>Email: </label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div>
+                        <label>Hasło: </label>
+                        <input type="password" name="password" required>
+                    </div>
+                    <div>
+                        <input type="submit" name="submit" required>
+                    </div>
+                    <?php echo $error;?>
+                    <span>Nie masz konta? <a href="register.php">Zarejestruj się</a>.</span>
+                </form>
+            </div>
         </div>
     
     </div>

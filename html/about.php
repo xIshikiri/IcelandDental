@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8"/>
     <link rel="icon" href="css/logo_square_120px.png" type="image/icon type">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="scripts/login_anim.js"></script>
     
     <title>Iceland Dental</title>
@@ -54,26 +54,26 @@
         
         <p>O nas</p>
 
-        <span class="title"> Jesteśmy liderem prywatnych usług medycznych w Polsce. Zapewniamy kompleksową opiekę diagnostyczną i stomatologiczną. Pod naszą opieką jest ponad 0 000 000 Pacjentów, którzy wychodzą od nas zadowoleni.</span>
+        <span class="about-title"> Jesteśmy liderem prywatnych usług medycznych w Polsce. Zapewniamy kompleksową opiekę diagnostyczną i stomatologiczną. Pod naszą opieką jest ponad 0 000 000 Pacjentów, którzy wychodzą od nas zadowoleni.</span>
 
-        <div class="wrap">
-            <div class="wrap-section">
-                <div class="wrap-75">
-                    <span class="wrap-text"> Wyśmienite zaopatrzenie oraz personel </span>
+        <div class="about-wrap">
+            <div class="about-wrap-section">
+                <div class="about-wrap-75">
+                    <span class="about-wrap-text"> Wyśmienite zaopatrzenie oraz personel </span>
                 </div>
-                <div class="wrap-25">
-                    <img src="css/logo_square_120px.png" class="wrap-photo">
+                <div class="about-wrap-25">
+                    <img src="css/logo_square_120px.png" class="about-wrap-photo">
                 </div>
             </div>
         </div>
 
-        <div class="wrap">
-            <div class="wrap-section">
-                <div class="wrap-25">
-                    <img src="css/logo_square_120px.png" class="wrap-photo">
+        <div class="about-wrap">
+            <div class="about-wrap-section">
+                <div class="about-wrap-25">
+                    <img src="css/logo_square_120px.png" class="about-wrap-photo">
                 </div>
-                <div class="wrap-75">
-                    <span class="wrap-text"> Lorem </span>
+                <div class="about-wrap-75">
+                    <span class="about-wrap-text"> Lorem </span>
                 </div>
             </div>
         </div>

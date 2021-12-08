@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8"/>
     <link rel="icon" href="css/logo_square_120px.png" type="image/icon type">
-    <link rel="stylesheet" href="css/updates.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="scripts/login_anim.js"></script>
     
     <title>Iceland Dental</title>
@@ -30,7 +30,6 @@
                     echo "<a href='login.php'><input type='button' class='lol' name='logoutButton' value='Zaloguj się'></a>";
                     echo "<div class='lol'></div>";
                 }
-                
                 ?>
             </div>
         </button>
@@ -54,17 +53,17 @@
         
         <p>Aktualności</p>
 
-        <div class="wrap-body">
-            <div class="wrap">
-                <div class="wrap-block">
-                    <a href="#" class="block-title">Lubie marmolade</a>
-                    <a href="#" class="block-date">17.01.2021</a>
-                    <a href="#" class="block-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam illo excepturi velit fuga fugiat, exercitationem molestiae voluptates quaerat, nostrum labore inventore, ad dolorum voluptatibus officiis ea veritatis. Corporis, eos similique?</a>
+        <div class="updates-body">
+            <div class="updates">
+                <div class="updates-block">
+                    <a href="#" class="updates-title">Lubie marmolade</a>
+                    <a href="#" class="updates-date">17.01.2021</a>
+                    <a href="#" class="updates-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam illo excepturi velit fuga fugiat, exercitationem molestiae voluptates quaerat, nostrum labore inventore, ad dolorum voluptatibus officiis ea veritatis. Corporis, eos similique?</a>
                 </div>
-                <div class="wrap-block">
-                    <a href="#" class="block-title">Przepis na spaghetti</a>
-                    <a href="#" class="block-date">08.12.2021</a>
-                    <a href="#" class="block-content">
+                <div class="updates-block">
+                    <a href="#" class="updates-title">Przepis na spaghetti</a>
+                    <a href="#" class="updates-date">08.12.2021</a>
+                    <a href="#" class="updates-content">
 Przepis na spaghetti bolognese
 Składniki:
 
