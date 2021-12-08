@@ -63,11 +63,11 @@
             </div>
 
             <div class="pricebox-name">
-                <span> Policja </span>
+                <span> Lorem </span>
             </div>
             <div class="pricebox-offer">
-                <span class="offer-name">Makowiec</span>
-                <span class="offer-cost">godność i prawa człoweka</span>
+                <span class="offer-name">Lorem</span>
+                <span class="offer-cost">Lorem</span>
             </div>
         </div>
     

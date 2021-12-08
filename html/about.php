@@ -54,7 +54,7 @@
         <div class="wrap">
             <div class="wrap-section">
                 <div class="wrap-75">
-                    <span class="wrap-text">Ay ay halo przyszedł przelew przyszło siano</span>
+                    <span class="wrap-text"> Wyśmienite zaopatrzenie oraz personel </span>
                 </div>
                 <div class="wrap-25">
                     <img src="css/logo_square_120px.png" class="wrap-photo">
@@ -68,7 +68,7 @@
                     <img src="css/logo_square_120px.png" class="wrap-photo">
                 </div>
                 <div class="wrap-75">
-                    <span class="wrap-text">Quieres?</span>
+                    <span class="wrap-text"> Lorem </span>
                 </div>
             </div>
         </div>
