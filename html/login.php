@@ -25,9 +25,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])){
             $result = $query->get_result();
             $user = $result->fetch_assoc();
 
-            $rows = $result -> num_rows;
-            $pwd = $user['password'];
-
             if($result) {
                 if (password_verify($password, $user['Password'])){
                     $_SESSION["userid"] = $user['ID'];
@@ -71,15 +68,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])){
                 <div>
                     <input type="submit" name="submit" required>
                 </div>
-                <?php 
-                
-                echo $error;
-                echo "email: " . $email;
-                echo "Wyników: " . $rows;
-                echo "Hash: " . $pwd;
-                echo "Haslo: " . $password;
-
-                ?>
+                <?php echo $error;?>
                 <p>Nie masz konta? <a href="register.php">Zarejestruj się</a>.</p>
             </form>
         </div>
