@@ -235,13 +235,13 @@ body{
 
 
 .team_photo_section{
-    height: 300px;
+    height: max-content;
     width: 90%;
     background-color: var(--secColor);
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 20px;
     margin: 100px 0;
 }
