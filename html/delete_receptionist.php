@@ -10,7 +10,9 @@ if ($query = $db -> prepare("SELECT * FROM Receptionist;")){
         while($row = $result -> fetch_assoc()) {
             $isChecked = !empty($_POST[$row['ID']]);
             if($isChecked){
-            $deleteQuery = $db -> prepare("DELETE FROM Receptionist WHERE ID = '{$row['ID']}';");
+            $deleteQuery = $db -> prepare("DELETE FROM receptionist WHERE ID = '{$row['ID']}';");
+            $deleteQuery -> execute();
+            $deleteQuery = $db -> prepare("DELETE FROM account WHERE email = '{$row['Email']}';");
             $deleteQuery -> execute();
             }
         }
