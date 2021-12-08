@@ -67,14 +67,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])){
     <div class="login_bar">
         <button class="login_button" onclick="show_login_box()">ZALOGUJ
             <div class="login_dropdown" id="loginDropdown">
-                
-                <input type="text">
-                <input type="password">
-                <button class="submit"></button>
-                
+                <?php 
+                if(isset($_SESSION['userid'])){
+                    // echo "<a href='logout.php'><input type='button' name='logoutButton' value='Wyloguj się'></a>";
+                }
+                if(!isset($_SESSION['userid'])){
+                    echo "<a href='login.php'><input type='button' class='lol' name='logoutButton' value='Zaloguj się'></a>";
+                    echo "<div class='lol'></div>";
+                }
+                ?>
             </div>
         </button>
-        
     </div>
 
     <!-- <div class="box_main">
