@@ -1,6 +1,7 @@
 <?php
 require_once "config.php";
-require_once "session.php";
+
+session_start();
 
 if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
     $name = trim($_POST['name']);
