@@ -23,7 +23,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])){
             $query -> execute();
             $result = $query->get_result();
             $user = $result->fetch_assoc();
-            if($result) {
+
+            if(!empty($user)) {
                 if (password_verify($password, $user['Password'])){
                     $_SESSION["userid"] = $user['ID'];
                     $_SESSION["user"] = $user;
