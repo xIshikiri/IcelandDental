@@ -47,7 +47,47 @@
 
     <div class="main">
         
-        
+        <p>Aktualności</p>
+
+        <div class="wrap-body">
+            <div class="wrap">
+                <div class="wrap-block">
+                    <a href="#" class="block-title">Lubie marmolade</a>
+                    <a href="#" class="block-date">17.01.2021</a>
+                    <a href="#" class="block-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam illo excepturi velit fuga fugiat, exercitationem molestiae voluptates quaerat, nostrum labore inventore, ad dolorum voluptatibus officiis ea veritatis. Corporis, eos similique?</a>
+                </div>
+                <div class="wrap-block">
+                    <a href="#" class="block-title">Przepis na spaghetti</a>
+                    <a href="#" class="block-date">08.12.2021</a>
+                    <a href="#" class="block-content">
+Przepis na spaghetti bolognese
+Składniki:
+
+opakowanie makaronu spaghetti,
+2 puszki krojonych pomidorów bez skórki,
+1 opakowanie passaty pomidorowej,
+1 duża marchewka, obrana i pokrojona w kostkę,
+1 duża cebula, pokrojona w kostkę,
+2 ząbki czosnku, przeciśnięte przez praskę,
+500 g mielonej wołowiny,
+3 łyżki oliwy z oliwek,
+0,5 łyżeczki tymianku,
+0,5 łyżeczki bazylii,
+0,5 łyżeczki cukru,
+sól i pieprz do smaku.
+Sposób przygotowania:
+
+W dużej patelni rozgrzej olej. Podsmaż cebulę. Gdy zacznie się szklić, dodaj czosnek i chwilę razem podsmażaj.
+odaj na patelnię mięso wołowe. Smaż tak długo, aż stanie się brązowe.
+Zalej mięso pomidorami i passatą, dodaj wszystkie przyprawy oraz marchewkę. Duś przez 10-15 minut, by dokładnie przegryzły się smaki.
+Spaghetti ugotuj al dente - będziesz je podgrzewać później w sosie i w przeciwnym razie może się rozgotować.
+Dodaj ugotowany makaron do sosu i chwilę podgrzewaj, ciągle mieszając. Jeśli spaghetti będzie zbyt suche, dodaj trochę wody po gotowaniu makaronu.
+Podawaj ze świeżą bazylią oraz startym parmezanem. Smacznego!
+Spaghetti nadaje się też do wielu innych sosów. Spróbuj zrobić je w wersji aglio e olio, z warzywami lub zrób drugie najsłynniejsze włoskie danie - makaron carbonara.
+                    </a>
+                </div>
+            </div>
+        </div>
     
     </div>
 
