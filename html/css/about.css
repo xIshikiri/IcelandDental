@@ -375,5 +375,20 @@ footer .footer_logo{
         transform-origin: bottom;
     }
 }
+.AdminPanel {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
 
+
+}
+.AdminPanelContent {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: black solid 2px;
+
+}
 
