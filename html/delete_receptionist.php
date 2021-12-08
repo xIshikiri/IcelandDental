@@ -25,7 +25,7 @@ if ($query = $db -> prepare("SELECT * FROM Receptionist;")){
 <html lang="pl-PL">
     <head>
         <meta charset="UTF-8">
-        <title>Zaloguj się</title>
+        <title>Usuń recepcjonistę</title>
     </head>
     <body>
         <div>
