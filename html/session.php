@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_SESSION["userid"]) && $_SESSION["userid"] === true) {
-    header("location: home.php");
+    header("location: index.php");
     exit;
 }
 ?>
