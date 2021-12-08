@@ -172,8 +172,8 @@ body{
 }
 
 .pricebox-name{
-    height: 75px;
-    width: 95%;
+    height: 50px;
+    width: 80%;
 
     display: flex;
     align-items: center;
@@ -186,13 +186,13 @@ body{
 .pricebox-name span{
     color: var(--fontColor);
 
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 50px;
 }
 
 .pricebox-offer{
     height: 75px;
-    width: 95%;
+    width: 80%;
     padding-left: 20px;
     padding-right: 20px;
     
@@ -210,7 +210,7 @@ body{
     align-items: center;
     justify-content: center;
 
-    font-size: 25px;
+    font-size: 20px;
     font-family: var(--fontFamilyFooter);
     color: var(--addColor);
 }
