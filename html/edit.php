@@ -1,6 +1,7 @@
 <?php
 require_once "config.php";
-require_once "session.php";
+
+session_start();
 
 $id=$_POST['radio'];
 
@@ -46,7 +47,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
                         }
                         $query -> close();
                     }
-                    echo '<input type="hidden" name="radio" value="{$id}">';
+                    echo "<input type='hidden' name='radio' value='{$_POST['radio']}''>";
                     mysqli_close($db);              
                 ?>
                 <input type="submit" name="submit" value="Prześlij">
