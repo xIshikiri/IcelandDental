@@ -5,9 +5,9 @@ session_start();
 
 $id=$_POST['radio'];
 
-
 if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
-    $editQuery = $db -> prepare("UPDATE client SET Name = {$_POST['name']}, Surname = {$_POST['surname']}, DateOfBirth = {$_POST['date']}, Adress = {$_POST['adress']}, PhoneNumber = {$_POST['phone']} WHERE ID = {$id};");
+    $editQuery = $db -> prepare("UPDATE client SET Name = ?, Surname = ?, DateOfBirth = ?, Adress = ?, PhoneNumber = ? WHERE ID = {$id};");
+    $editQuery -> bind_param('sssss', $_POST['name'], $_POST['surname'], $_POST['date'], $_POST['adress'], $_POST['phone']);
     $editQuery -> execute();
     header("location: edit_client.php");
     exit;
@@ -26,7 +26,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
     <body>
     <h2>Edycja</h2>
         <div>
-            <form>
+            <form method="post">
                 <?php
                     if ($query = $db -> prepare("SELECT * FROM Client WHERE ID = $id ;")){
                     $query -> execute();
