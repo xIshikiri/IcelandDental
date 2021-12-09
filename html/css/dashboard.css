@@ -20,18 +20,38 @@ body {
     padding: 0;
 }
 
+header {
+    color: var(--mainColor);
+    font-family: var(--fontFamilyNavBar);
+}
 
 #mainSection {
     display: flex;
 
+
 }
+
+.dashboardMenu {
+    width: 500px;
+    height: 800px;
+    border: var(--mainColor) 2px solid;
+    font-size: 12345px;
+    border-radius: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+}
+
+
+
+
+
 
 .appointmentsContainer {
     align-self: center;
+    height: 100vh;
 
 }
-
-
 
 .appointment {
 
@@ -41,7 +61,7 @@ body {
     background-color: var(--secColor);
     font-family: var(--fontFamilyMain);
     color: white;
-    /*border-radius: 10px;*/
+    border-radius: 10px;
 }
 .appointmentContentPatient {
     margin: 10px;
