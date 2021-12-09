@@ -1,10 +1,8 @@
 <?php
 require_once "config.php";
-session_start();
+require_once "session.php";
 
-// $post_array=$_SESSION['post array'];
-// $email=$post_array['email'];
-$email=$_POST['email'];
+$id=$_POST['radio'];
 
 ?>
 
@@ -20,7 +18,7 @@ $email=$_POST['email'];
     <h2>Edycja</h2>
         <div>
         <?php
-            if ($query = $db -> prepare("SELECT * FROM Client WHERE email = $email ;")){
+            if ($query = $db -> prepare("SELECT * FROM Client WHERE ID = $id ;")){
             $query -> execute();
                                     
             $result = $query->get_result();

@@ -1,6 +1,6 @@
 <?php
 require_once "config.php";
-session_start();
+require_once "session.php";
 
 ?>
 
@@ -33,7 +33,7 @@ session_start();
                             if ($result -> num_rows > 0) {
                                 while($row = $result -> fetch_assoc()) {
                                         echo "<tr>";
-                                        echo "<td><input type='submit' name='{$row['ID']}' value='Otwórz'></td>";
+                                        echo "<td><input type='radio' name='radio' value='{$row['ID']}'></td>";
                                         echo "<td>{$row['Name']}</td>";
                                         echo "<td>{$row['Surname']}</td>";
                                         echo "<td>{$row['DateOfBirth']}</td>";
@@ -49,9 +49,9 @@ session_start();
                         }
 
                         mysqli_close($db);
-                        $_SESSION['post array']=$_POST;
                     ?>
                 </table>
+                <button type="sumit">Wybierz</button>
             </form>
         </div>
     </body>
