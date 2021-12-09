@@ -935,35 +935,3 @@ footer .footer_logo{
 
 
 
-.appointment {
-    width: 450px;
-    height: 100px;
-    background-color: var(--secColor);
-    font-family: var(--fontFamilyMain);
-    color: white;
-    border-radius: 10px;
-}
-.appointmentContentPatient {
-    margin: 10px;
-    font-size: 1.2em;
-}
-.appointmentContentDate {
-    margin-left: 20px;
-    align-self: end;
-}
-.appointmentContentNotes {
-    margin-top: 20px;
-
-    margin-left: 10px;
-}
-.appointmentContentVisitPanel {
-    margin-right: 1px;
-    margin-top: 10px;
-    float: right;
-    margin-left: 2px;
-    border-radius: 5px;
-    border: none;
-    height: 1.2em;
-    width: 15vh;
-}
-
