@@ -52,8 +52,9 @@ body{
 .login_bar{
     width: 100%;
     height: 70px;
-    background-color: var(--mainColor);
-    position: relative;
+    /* background-color: var(--mainColor); */
+    position: absolute;
+    z-index: 59;
 }
 
 .login_bar .login_button{
@@ -71,27 +72,94 @@ body{
     text-decoration: none;
     color: var(--fontColor);
     cursor: pointer;
+    z-index: 59;
+
+    font-size: 17px;
+    font-family: var(--fontFamilyFooter);
 }
 
 .login_dropdown{
     background-color: var(--trdColor);
-    height: 200px;
-    width: 350px;
+    height: 400px;
+    width: 250px;
     position: absolute;
-    right: 47px;
+    right: 60px;
     top: 62px;
     z-index: 50;
     border-radius: 5px;
     display: none;
     cursor: default;
+    box-shadow: 0px 0px 3px rgb(0 0 0 / 20%);
+}
+
+.dropdown_box{
+    height: 100%;
+    width: 100%;
+    background-color: var(--addColor);
+    border-radius: 5px;
+    position: relative;
+}
+
+.dropdown_content_logo_contener{
+    width: 100%;
+    height: 175px;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    background-color: var(--trdColor);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown_content_logo{
+    width: 128px;
+    height: 128px;
+    background-color: var(--addColor);
+
+    border-radius: 90px;
 }
 
 .dropdown_content{
-    height: 100%;
     width: 100%;
-    background-color: var(--trdColor);
-    border-radius: 5px;
-    position: relative;
+    height: 225px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.dropdown_content span{
+    font-size: 20px;
+    font-family: var(--fontFamilyContainer);
+    color: var(--fontColor);
+
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    text-align: center;
+}
+
+.dropdown_content a{
+    width: 80%;
+    height: 35px;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fontColor);
+    font-family: var(--fontFamilyMain);
+    text-shadow: 0 0 3px rgb(0 0 0 / 20%);
+
+    text-decoration: none;
+    font-size: 17px;
+
+    background-color: var(--secColor);
+    box-shadow: 0px 0px 3px rgb(0 0 0 / 10%);
 }
 
 .box_main{
@@ -758,6 +826,7 @@ body{
 .navbar .home{
     width: 40px;
     transition: 0.2s;
+    z-index: 80;
 }
 
 .navbar .home_bttn{

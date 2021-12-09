@@ -65,19 +65,29 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])){
     </div>
 
     <div class="login_bar">
-        <button class="login_button" onclick="show_login_box()">ZALOGUJ
-            <div class="login_dropdown" id="loginDropdown">
-                <?php 
-                if(isset($_SESSION['userid'])){
-                    // echo "<a href='logout.php'><input type='button' name='logoutButton' value='Wyloguj się'></a>";
-                }
-                if(!isset($_SESSION['userid'])){
-                    echo "<a href='login.php'><input type='button' class='lol' name='logoutButton' value='Zaloguj się'></a>";
-                    echo "<div class='lol'></div>";
-                }
-                ?>
-            </div>
-        </button>
+        <?php 
+            if(isset($_SESSION['userid'])) {?>
+                    <button class="login_button" onclick="show_login_box()">ZALOGUJ
+                        <div class="login_dropdown" id="loginDropdown">
+                            <div class="dropdown_box">
+                                <div class="dropdown_content_logo_contener">
+                                    <div class="dropdown_content_logo"></div>
+                                </div>
+                                <div class="dropdown_content">
+                                    <span> [NAZWA UZYTKOWNIKA] </span>
+                                    <a href="#"> PROFIL </a>
+                                    <a href="#"> USTAWIENIA </a>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+            <?php
+            }
+            if(!isset($_SESSION['userid'])){?>
+                <a href='login.php'><input type='button' class='login_button' name='logoutButton' value='Zaloguj'></a>
+            <?php
+            }
+        ?>
     </div>
 
     <!-- <div class="box_main">
