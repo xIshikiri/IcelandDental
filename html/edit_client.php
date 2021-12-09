@@ -39,7 +39,7 @@ session_start();
                                         echo "<td>{$row['DateOfBirth']}</td>";
                                         echo "<td>{$row['Adress']}</td>";
                                         echo "<td>{$row['PhoneNumber']}</td>";
-                                        echo "<td name='email'>{$row['Email']}</td>";
+                                        echo "<td name='email'><input name='email' value='{$row['Email']}'></td>";
                                         echo "</tr>";
                                 }
                             } else {

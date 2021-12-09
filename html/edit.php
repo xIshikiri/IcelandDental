@@ -2,8 +2,9 @@
 require_once "config.php";
 session_start();
 
-$post_array=$_SESSION['post array'];
-$email=$post_array['email'];
+// $post_array=$_SESSION['post array'];
+// $email=$post_array['email'];
+$email=$_POST['email'];
 
 ?>
 
