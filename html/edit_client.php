@@ -39,7 +39,7 @@ require_once "session.php";
                                         echo "<td>{$row['DateOfBirth']}</td>";
                                         echo "<td>{$row['Adress']}</td>";
                                         echo "<td>{$row['PhoneNumber']}</td>";
-                                        echo "<td name='email'><input name='email' value='{$row['Email']}'></td>";
+                                        echo "<td>{$row['Email']}</td>";
                                         echo "</tr>";
                                 }
                             } else {
@@ -51,7 +51,7 @@ require_once "session.php";
                         mysqli_close($db);
                     ?>
                 </table>
-                <button type="sumit">Wybierz</button>
+                <input type="submit" value="Wybierz">
             </form>
         </div>
     </body>
