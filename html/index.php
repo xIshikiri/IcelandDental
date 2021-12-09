@@ -47,7 +47,7 @@
     </div>
 
     <div class="box_main">
-        <a href="index.php" class="box_text">POOGLĄDAĆ?</a>
+        <a href="index.php" class="box_text">Iceland Dental</a>
         <div class="box_main_content"></div>
     </div>
     <div class="navbar">
