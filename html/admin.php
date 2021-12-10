@@ -19,7 +19,7 @@
 
     <div class="AdminPanelContent">
         Klienci
-        <a href="#">Stwórz</a>
+        <a href="">Stwórz</a>
         <a href="#">Dodaj</a>
     </div>
     <div class="AdminPanelContent">
