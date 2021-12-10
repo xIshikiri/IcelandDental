@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
     $phone = trim($_POST['phone']);
     $password = "12345678";
     $password_hash = password_hash($password, PASSWORD_BCRYPT);
-    $type = "Receptionist";
+    $type = "Client";
 
 
     if($query = $db->prepare("SELECT * FROM account WHERE email = ?")) {
@@ -24,11 +24,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
             $error .= '<p>Konto o tym adresie email już istnieje.</p>';
         } else {
             if (empty($error)) {
-                $insertQuery = $db->prepare("INSERT INTO account (Email, Password, Type) VALUES (?, ?, ?);");
-                $insertQuery->bind_param('sss', $email, $password_hash, $type);
-                $result = $insertQuery->execute();
-                $insertQuery = $db->prepare("INSERT INTO receptionist (Name, Surname, DateOfBirth, Adress, PhoneNumber, Email) VALUES (?, ?, ?, ?, ?, ?);");
-                $insertQuery->bind_param('ssssss', $name, $surname, $dob, $adress, $phone, $email);
+                $insertQuery = $db->prepare("INSERT INTO visit (Client_ID, Doctor_ID, Treatment_ID, Date, Treatment) VALUES (?, ?, ?, ?, ?);");
+                $insertQuery->bind_param('ssssss', $name, $surname, $dob, $adress, $phone);
                 $result = $insertQuery->execute();
                 if ($result) {
                     $error .='<p>Rejestracja powiodła się, możesz się teraz zalogować.</p>';
@@ -47,13 +44,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
 <html lang="pl-PL">
     <head>
         <meta charset="UTF-8">
-        <title>Zarejestruj się</title>
+        <title>Dodaj wizytę</title>
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <div>
-            <h2>DODAJ RECEPCJONISTE</h2>
-            <p>Wypełnij ten formularz, aby dodać recepcjonistę.</p>
+            <h2>DODAWANIE Wizyty</h2>
+            <p>Wypełnij ten formularz, aby się dodać wizytę.</p>
             <?php   
             if(isset($_POST['submit'])) {
                 echo $error; 
@@ -61,31 +58,27 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
             ?>
             <form action="" method="post">
                 <div>
-                    <label>Imię: </label>
-                    <input type="text" name="name" required>
+                    <label>Email klienta: </label>
+                    <input type="text" name="client" required>
                 </div>
                 <div>
-                    <label>Nazwisko: </label>
-                    <input type="text" name="surname" required>
+                    <label>Email dokotra: </label>
+                    <input type="text" name="doctor" required>
                 </div>
                 <div>
-                    <label>Data urodzenia: </label>
-                    <input type="date" name="dob" required>
+                    <label>Typ wizyty: </label>
+                    <input type="datalist" name="type" required>
                 </div>
                 <div>
-                    <label>Adres: </label>
-                    <input type="text" name="adress" required>
+                    <label>Data wizyty: </label>
+                    <input type="date" name="date" required>
                 </div>
                 <div>
-                    <label>Adres email: </label>
-                    <input type="email" name="email" required>
+                    <label>Notatki: </label>
+                    <input type="textarea" name="notes" required>
                 </div>
                 <div>
-                    <label>Nr telefonu: </label>
-                    <input type="text" name="phone" required>
-                </div>
-                <div>
-                    <input type="submit" name="submit" value="Zarejestruj">
+                    <input type="submit" name="submit" value="Dodaj">
                 </div>
             </form>
         </div>

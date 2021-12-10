@@ -20,7 +20,6 @@ if ($query = $db -> prepare("SELECT * FROM doctor;")){
 }
 ?>
 
-<!DOCTYPE html>
 <html lang="pl-PL">
     <head>
         <meta charset="UTF-8">
