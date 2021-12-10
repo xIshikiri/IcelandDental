@@ -4,7 +4,6 @@ session_start();
 
 $s=$_SESSION['user'];
 $email=$s['Email'];
-echo "<p>$</p>";
 
 $query = $db -> prepare("SELECT ID FROM Doctor WHERE Email = ?;");
 $query -> bind_param("s", $email);
@@ -40,7 +39,7 @@ $id = $query->get_result();
 
 <div id="appointmentsContainer" class="appointmentsContainer">
 <?php
-                        if ($query = $db -> prepare("SELECT client.Name,client.Surname,treatment.Name,visit.Date,visit.Notes
+                        if ($query = $db -> prepare("SELECT client.Name,client.Surname,treatment.Named,visit.Date,visit.Notes
                         FROM Visit 
                         INNER JOIN client on visit.Client_ID=client.ID
                         INNER JOIN treatment on visit.Treatment_ID=treatment.ID
@@ -52,7 +51,7 @@ $id = $query->get_result();
         
                             if ($result -> num_rows > 0) {
                                 while($row = $result -> fetch_assoc()) {
-                                        echo "<appointment-module patient='{$row['client.Name']} {$row['client.Surname']}' date='{$row['visit.Date']}' notes='{$row['visit.Notes']}' treatment='{$row['treatment.Name']}'></appointment-module>";
+                                        echo "<appointment-module patient='{$row['Name']} {$row['Surname']}' date='{$row['Date']}' notes='{$row['Notes']}' treatment='{$row['Named']}'></appointment-module>";
                                         echo "<td></td>";
                                 }
                             } else {
