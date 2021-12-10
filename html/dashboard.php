@@ -3,10 +3,11 @@ require_once "config.php";
 session_start();
 
 $s=$_SESSION['user'];
-$email=$s['email'];
+$email=$s['Email'];
 echo "<p>$</p>";
 
-$query = $db -> prepare("SELECT ID FROM Doctor WHERE Email = $email ");
+$query = $db -> prepare("SELECT ID FROM Doctor WHERE Email = ?;");
+$query -> bind_param("s", $email);
 $query -> execute();
 $id = $query->get_result();
 ?>
@@ -43,7 +44,8 @@ $id = $query->get_result();
                         FROM Visit 
                         INNER JOIN client on visit.Client_ID=client.ID
                         INNER JOIN treatment on visit.Treatment_ID=treatment.ID
-                        WHERE DOCTOR_ID = $id AND date > NOW() ORDER BY Date")){
+                        WHERE DOCTOR_ID = ? AND date > NOW() ORDER BY Date")){
+                            $query -> bind_param("i", $id);
                             $query -> execute();
                                                     
                             $result = $query->get_result();
