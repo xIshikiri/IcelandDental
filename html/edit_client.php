@@ -13,7 +13,7 @@ require_once "session.php";
     <body>
         <h2>Lista kont</h2>
         <div> 
-            <form method="post" action="edit.php">
+            <form method="post" action="edit_c.php">
                 <table>
                     <tr>
                         <th></th>
