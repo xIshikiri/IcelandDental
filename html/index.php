@@ -1,7 +1,6 @@
 <?php
     session_start();
 ?>
-<!DOCTYPE html lang="pl-PL">
 <html>
 <head>
     <meta charset="UTF-8"/>
@@ -30,7 +29,7 @@
                                 </div>
                                 <div class="dropdown_content">
                                     <span> [NAZWA UZYTKOWNIKA] </span>
-                                    <a href="#"> PROFIL </a>
+                                    <a href="dashboard.php"> PROFIL </a>
                                     <a href="#"> USTAWIENIA </a>
                                 </div>
                             </div>

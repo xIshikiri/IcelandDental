@@ -1,6 +1,7 @@
 
 <?php
-//session_start();
+require_once "config.php";
+session_start();
 ?>
 <html>
 <head>
@@ -18,19 +19,24 @@
 
 
     <div class="AdminPanelContent">
-        Klienci
-        <a href="#">Stwórz</a>
-        <a href="#">Dodaj</a>
+        Client
+        <a href="create_client.php">Create</a>
+        <a href="edit_client.php">Edit</a>
+        <a href="delete_client.php">Delete</a>
     </div>
     <div class="AdminPanelContent">
-        Lekarze
-        <a href="#">Stwórz</a>
-        <a href="#">Dodaj</a>
+        Dentist
+        <a href="create_doctor.php">Create</a>
+        <a href="edit_doctor.php">Edit</a>
+        <a href="delete_doctor.php">Delete</a>
+
     </div>
     <div class="AdminPanelContent">
-        Personel
-        <a href="#">Stwórz</a>
-        <a href="#">Dodaj</a>
+        Staff
+        <a href="create_receptionist.php">Create</a>
+        <a href="edit_receptionist.php">Edit</a>
+        <a href="delete_receptionist.php">Delete</a>
+
     </div>
 
 
