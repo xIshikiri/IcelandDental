@@ -29,7 +29,7 @@
                                 </div>
                                 <div class="dropdown_content">
                                     <span> [NAZWA UZYTKOWNIKA] </span>
-                                    <a href="#"> PROFIL </a>
+                                    <a href="dashboard.php"> PROFIL </a>
                                     <a href="#"> USTAWIENIA </a>
                                 </div>
                             </div>
