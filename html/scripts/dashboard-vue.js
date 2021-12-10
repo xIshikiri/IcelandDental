@@ -21,12 +21,14 @@ Vue.component('appointmentModule', {
         patient: String,
         date: String,
         notes: String,
+        treatment: String,
     },
 
     template: "    <div class=\"appointment\">\n" +
         "        <span class=\"appointmentContentPatient\">Patient: {{patient}}  </span>\n" +
         "        <span class=\"appointmentContentDate\"> {{date}}</span> <br>\n" +
         "        <span class=\"appointmentContentNotes\">Notes: {{notes}}</span> <br/>\n" +
+        "        <span class=\"appointmentContentNotes\">Treatment: {{treatment}}</span>" +
         "        <a href='#'><input type=\"button\" class=\"appointmentContentVisitPanel\" value=\"Visit panel\"></a>\n" +
         "        <a href='#'><input type=\"button\" class=\"appointmentContentVisitPanel\" value=\"Options\"></a>\n" +
         "\n" +
