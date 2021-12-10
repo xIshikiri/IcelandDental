@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="scripts/login_anim.js"></script>
     
-    <title>Iceland Dental</title>
+    <title>Tytuł strony.</title>
     
 </head>
 <body>
