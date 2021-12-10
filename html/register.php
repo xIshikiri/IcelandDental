@@ -54,8 +54,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
 }
 ?>
 
-<!DOCTYPE html lang="pl-PL">
-<html>
+<html lang="pl-PL">
     <head>
         <meta charset="UTF-8"/>
         <link rel="icon" href="css/logo_square_120px.png" type="image/icon type">
