@@ -177,6 +177,7 @@ body{
     height: 500px;
     background-size: 100%;
     background: var(--mainColor) url("mountain1.png") no-repeat fixed center right;
+    background-size: cover;
     z-index: -100;
     animation: boxMainAnim 15s ease-out both;
 }
