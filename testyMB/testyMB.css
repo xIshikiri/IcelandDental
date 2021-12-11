@@ -1,14 +1,20 @@
 :root{
-    --varColor: red;
-    --varColor1: blue;
+    --varColor: rgb(190, 56, 56);
+    --varColor1: rgb(64, 64, 207);
 }
 
-
-
+body{
+    background-color: none;
+}
 
 #blockID{
-    background-color: white;
-
     height: 250px;
+    width: 250px;
+}
+
+#inputID, #inputID1{
+    
+
+    height: 100px;
     width: 250px;
 }
