@@ -11,31 +11,32 @@ function kolor1(){
     document.title = " _ _ 🚓💨 _ _ ";
 }
 
-
-
-function police(){
-
-    var check = document
-    switch (document.getElementsByName("policeSpeed").values){
-        case 200:
-            speed = "500";
-            break;
-    }
-
-    function startColor(){
-        console.log("red");
-        kolor();
-        setTimeout(startColor1, speed);
-    }
-
-    function startColor1(){
-        console.log("blue");
-        kolor1();
-        setTimeout(startColor, speed);
-    }
-
-    startColor();
+function getSpeed(){
+    var speed = document.querySelector('#speed').value;
+    console.log(speed);
 }
 
+function getChecked() {
+    const checkBox = document.getElementById('check1').checked;
+    if (checkBox === true) {
+      console.log(true);
+      } else {
+        console.log(false);
+    }
+  }
 
-//jebac to
+
+function startColor(){
+    console.log("red");
+    kolor();
+    console.log(speed);
+    setTimeout(startColor1, speed);
+}
+
+function startColor1(){
+    console.log("blue");
+    kolor1();
+    setTimeout(startColor, speed);
+}
+
+startColor();
