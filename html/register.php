@@ -1,18 +1,23 @@
-<?php
+-<?php
 require_once "config.php";
 require_once "session.php";
 
+//metoda wywoływana przez metodę POST
 if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
-    $name = trim($_POST['name']);
-    $surname = trim($_POST['surname']);
-    $dob = trim($_POST['dob']);
-    $adress = trim($_POST['adress']);
-    $email = trim($_POST['email']);
-    $phone = trim($_POST['phone']);
-    $password = trim($_POST['password']);
-    $confirmpassword = trim($_POST['confirmPassword']);
-    $password_hash = password_hash($password, PASSWORD_BCRYPT);
-    $type = "Client";
+
+    //zmiennne pobrane z formularza
+    $name = trim($_POST['name']); // imię użytkownika
+    $surname = trim($_POST['surname']); // nazwisko użytkownika
+    $dob = trim($_POST['dob']); // datę urodzenia użytkownika
+    $adress = trim($_POST['adress']); //  adres zamieszkania użytkownika
+    $email = trim($_POST['email']); //   email użytkownika
+    $phone = trim($_POST['phone']); //   telefon użytkownika
+    $password = trim($_POST['password']); // hasło
+    $confirmpassword = trim($_POST['confirmPassword']); //potwierdzenie hasła
+
+    //pozostałe zmienne
+    $password_hash = password_hash($password, PASSWORD_BCRYPT);//kodowanie hasła
+    $type = "Client";//typ rejestrowanego konta się
 
 
     if($query = $db->prepare("SELECT * FROM account WHERE email = ?")) {
