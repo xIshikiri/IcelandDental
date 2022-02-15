@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="testyMB.css">
     
-    <script src="testyMB.js"></script>
+    <script src="KYS.js"></script>
 </head>
 <body>
     
